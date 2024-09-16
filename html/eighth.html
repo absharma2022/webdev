@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and Classes</title>
+</head>
+<body>
+    <h2>Id and Classes in HTML</h2>
+
+
+    <!-- we will define properties in classes using css -->
+
+    <!-- one element has only one id and one id can be in only in one element that means this id cannot be used again anywhere else in the same webdoc  -->
+
+     <!-- Multiple class to a element can be given just by adding name of class with space in class atttribute like in below example div with id main box has class redBg and blackBorder  -->
+      <!-- Same class can be given to another element like in below example redBg class is given to span also -->
+
+       <!-- class can be given to multiple element and a element can have multiple class -->
+    <div id="mainbox" class="redBg blackBorder">
+        This is mainbox of div
+    </div>
+    <span class="redBg"></span>
+
+    <!-- Emmet -->
+
+    <!-- if you need a span element of class redBG then type span.redBg it will be done automatically after click enter and if you want multiple let say 10 span element of class redBg then type span.redBg*10 and then enter it will automatically will take 10  -->
+     <!-- Now if you want to give a id also while generating then for id use #id and rest of things are same  -->
+      <span class="redBg"></span>
+      <span id="spanid" class="redBg"></span>
+      <p class="redBg" id="idp"></p>
+
+      <!-- use dot(.) for class and # for id of element to generate  -->
+       <!-- to generate below just type strong.whiteboard#idwhite and then enter  -->
+       <strong class="wehiteboard" id="idwhite"></strong>
+
+       <!-- Emmet take div tag as default  -->
+        <!-- thatt means just type .classname and hit enter it will give div tag with class="classname"  -->
+         <div class="classname"></div>
+</body>
+</html>

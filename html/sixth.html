@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms Tutorial in HTML</h2>
+    <!-- In form tag action is just to tell where to submit the form, usually it is collected at the backend of web so we can ask to submit the form to a file named backend.php  -->
+    <form action="backend.php">
+        <div>
+        <!-- by name attribute our backedn will configure this name tag and there will be way to take the value of name tag  -->
+            Name: <input type="text" name="myname">
+        </div>
+        <!-- br line breaker is not recommended but will be used in this tutorial only  -->
+        <br> 
+
+        <!-- use label by using id of input tag  -->
+         <!-- Here when I will click on Nick Name box automatically will bne selected   -->
+         <div>
+            <label for="name2">Nick Name</label>
+            <input type="text" name="mynickname" id="name2">
+         </div>
+         <br>
+        <div>
+        <!-- by name attribute our backedn will configure this role tag and there will be way to take the value of role  -->
+            Role: <input type="text" name="myrole">
+        </div>
+        <br> 
+        <div>
+            <!-- by name attribute our backedn will configure this email tag and there will be way to take the value of email  -->
+            Email: <input type="email" name="Myemail" id="">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            Rank: <input type="number" name="mynumber">
+        </div>
+        <br>
+        <div>
+            Have a PhD Degree: <input type="checkbox" name="myPhDdegree">
+        </div>
+        <br>
+        <div>
+            <!-- if you want to keep check box checked by default  -->
+            Are you human: <input type="checkbox" name="human " checked>
+        </div>
+        <br>
+        <div>
+            <!-- Radio bottens  -->
+             <!-- Here if we keep name same in checkbox then we can check only one at a time  -->
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> other <input type="radio" name="mygender">
+        </div>
+
+        <!-- taxarea inserting in html  -->
+         <br>
+         <div>
+            Write about yourself: <br> <textarea name="mytext" cols="30" rows="10">Hey I am interested in your job</textarea>
+         </div>
+         <br>
+         <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <!-- write selected attribute if you want by deafult selected  -->
+                <option value="alto" selected="">Alto</option>
+                <option value="Honda1">Honda City</option>
+                <option value="honda2">Honda Amaze</option>
+            </select>
+         </div>
+
+        <!-- To take submit  -->
+         <br>
+         <div>
+            <input type="submit" value="SUbmit Now">
+            <input type="reset" name="Rest">
+         </div>
+    </form>
+
+</body>
+</html>
